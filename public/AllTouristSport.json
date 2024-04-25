@@ -1,0 +1,140 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/T4KzGMq/sb.png",
+      "tourists_spot_name": "Sundarban",
+      "country_Name": "Bangladesh",
+      "location": "Sundarbans, Khulna Division",
+      "short_description": "World's largest mangrove forest and home to the Royal Bengal Tiger.",
+      "average_cost": "Varies depending on tour package",
+      "seasonality": "Winter",
+      "travel_time": "2-3 days",
+      "totalVisitorsPerYear": 100000
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/dGbgqRv/bnk1.jpg",
+      "tourists_spot_name": "Bangkok",
+      "country_Name": "Thailand",
+      "location": "Bangkok",
+      "short_description": "Vibrant capital city known for its street life and cultural landmarks.",
+      "average_cost": "Varies depending on accommodation and activities",
+      "seasonality": "Year-round",
+      "travel_time": "3-4 days",
+      "totalVisitorsPerYear": 2000000
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/bXWfvN1/cz.jpg",
+        "tourists_spot_name": "Cox's Bazar",
+        "country_Name": "Bangladesh",
+        "location": "Cox's Bazar, Chittagong Division",
+        "short_description": "Longest natural sea beach in the world.",
+        "average_cost": "Varies depending on accommodation and activities",
+        "seasonality": "Winter",
+        "travel_time": "2-3 days",
+        "totalVisitorsPerYear": 500000
+      },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/hYQCk2x/Chiang-Mai.jpg",
+      "tourists_spot_name": "Chiang Mai",
+      "country_Name": "Thailand",
+      "location": "Chiang Mai",
+      "short_description": "Northern city known for its temples, markets, and lush landscapes.",
+      "average_cost": "Varies depending on accommodation and activities",
+      "seasonality": "Year-round",
+      "travel_time": "2-3 days",
+      "totalVisitorsPerYear": 1500000
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/L5bPprd/Kuala-Lumpur.jpg",
+        "tourists_spot_name": "Kuala Lumpur",
+        "country_Name": "Malaysia",
+        "location": "Kuala Lumpur",
+        "short_description": "Capital city known for its modern skyline, shopping, and cultural sites.",
+        "average_cost": "Varies depending on accommodation and activities",
+        "seasonality": "Year-round",
+        "travel_time": "2-3 days",
+        "totalVisitorsPerYear": 8000000
+      },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/54sL258/Bali.jpg",
+      "tourists_spot_name": "Bali",
+      "country_Name": "Indonesia",
+      "location": "Bali",
+      "short_description": "Island known for its beaches, coral reefs, and vibrant culture.",
+      "average_cost": "Varies depending on accommodation and activities",
+      "seasonality": "Year-round",
+      "travel_time": "5-7 days",
+      "totalVisitorsPerYear": 6000000
+    },
+    
+    
+   
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/HHRQBXX/Ha-Long-Bay.jpg",
+        "tourists_spot_name": "Ha Long Bay",
+        "country_Name": "Vietnam",
+        "location": "Quang Ninh Province",
+        "short_description": "Scenic bay known for its emerald waters and limestone islands.",
+        "average_cost": "Varies depending on tour package",
+        "seasonality": "Year-round",
+        "travel_time": "2-3 days",
+        "totalVisitorsPerYear": 2000000
+      },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/frDrnc3/Langkawi.jpg",
+      "tourists_spot_name": "Langkawi",
+      "country_Name": "Malaysia",
+      "location": "Langkawi",
+      "short_description": "Archipelago known for its beaches, mangroves, and duty-free shopping.",
+      "average_cost": "Varies depending on accommodation and activities",
+      "seasonality": "Year-round",
+      "travel_time": "3-4 days",
+      "totalVisitorsPerYear": 3000000
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co/HdP06sN/Siem-Reap.webp",
+      "tourists_spot_name": "Siem Reap",
+      "country_Name": "Cambodia",
+      "location": "Siem Reap",
+      "short_description": "Gateway to the Angkor Wat complex, vibrant town with markets and nightlife.",
+      "average_cost": "Varies depending on accommodation and activities",
+      "seasonality": "Year-round",
+      "travel_time": "2-3 days",
+      "totalVisitorsPerYear": 3000000
+    },
+  
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/gmSqccp/Ho-Chi-Minh-City.jpg",
+      "tourists_spot_name": "Ho Chi Minh City",
+      "country_Name": "Vietnam",
+      "location": "Ho Chi Minh City",
+      "short_description": "Formerly Saigon, vibrant city known for its French colonial landmarks and street food scene.",
+      "average_cost": "Varies depending on accommodation and activities",
+      "seasonality": "Year-round",
+      "travel_time": "3-4 days",
+      "totalVisitorsPerYear": 4000000
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co/KwhgWS7/Angkor-Wat.jpg",
+      "tourists_spot_name": "Angkor Wat",
+      "country_Name": "Cambodia",
+      "location": "Siem Reap",
+      "short_description": "Iconic temple complex dating back to the 12th century, UNESCO World Heritage Site.",
+      "average_cost": "Varies depending on tour package",
+      "seasonality": "Year-round",
+      "travel_time": "2-3 days",
+      "totalVisitorsPerYear": 2500000
+    }
+    
+  ]
+  
