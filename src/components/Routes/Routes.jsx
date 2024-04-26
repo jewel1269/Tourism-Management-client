@@ -6,6 +6,10 @@ import Register from "../Register/Register";
 import Countries from "../Countries/Countries";
 import ViewDetails from "../Details/ViewDetails";
 import AddTouristsSpot from "../AddTourists Spot/AddTouristsSpot";
+import Bangladesh from "../../Country/Banglasedh/Bangladesh";
+import MyList from "../MyList/MyList";
+import PrivateRoute from "../Private1/PrivateRoute";
+import PrivateMyList from "../Private2/PrivateMyList";
 
 
 
@@ -37,8 +41,16 @@ const router = createBrowserRouter([
         },
         {
           path: "/addTourist",
-          element: <AddTouristsSpot/>
+          element: <PrivateRoute> <AddTouristsSpot/></PrivateRoute>
 
+        },
+        {
+          path: "/bangladesh/:id",
+          element: <Bangladesh/>
+        },
+        {
+          path:"/myList",
+          element: <PrivateMyList><MyList/></PrivateMyList>
         },
         
       ]

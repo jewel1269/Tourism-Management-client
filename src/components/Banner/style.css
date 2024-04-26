@@ -24,6 +24,7 @@
     border-radius: 10px;
     padding: 2px;
     box-shadow: 2px 2px 2px 2px whitesmoke;
+    
   }
   
   .swiper-slide {
@@ -74,3 +75,6 @@
     transform: rotate(-90deg);
   }
   
+  #jewel{
+    background-color: rgb(229, 234, 240);
+  }

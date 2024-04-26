@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "location": "Sundarban",
+      "image": "sundarban.jpg",
+      "tourists_spot_name": ["Sundarban National Park", "Sajnekhali Wildlife Sanctuary", "Dublar Char"],
+      "average_cost": "$500 - $1000",
+      "totalVisitorsPerYear": 100000,
+      "travel_time": "2-3 days",
+      "seasonality": "November to March"
+    },
+    {
+      "id": 2,
+      "location": "Cox’s Bazar",
+      "image": "coxs_bazar.jpg",
+      "tourists_spot_name": ["Inani Beach", "Himchari Waterfall", "Adinath Temple"],
+      "average_cost": "$300 - $600",
+      "totalVisitorsPerYear": 500000,
+      "travel_time": "1-2 days",
+      "seasonality": "October to April"
+    },
+    {
+      "id": 3,
+      "location": "Rangamati",
+      "image": "rangamati.jpg",
+      "tourists_spot_name": ["Kaptai Lake", "Shuvolong Waterfall", "Tribal Handicrafts Market"],
+      "average_cost": "$200 - $400",
+      "totalVisitorsPerYear": 200000,
+      "travel_time": "1-2 days",
+      "seasonality": "September to February"
+    },
+    {
+      "id": 4,
+      "location": "Bandarban",
+      "image": "bandarban.jpg",
+      "tourists_spot_name": ["Nilgiri Hills", "Boga Lake", "Chimbuk Hill"],
+      "average_cost": "$250 - $500",
+      "totalVisitorsPerYear": 150000,
+      "travel_time": "2-3 days",
+      "seasonality": "October to March"
+    },
+    {
+      "id": 5,
+      "location": "Saint Martin’s Island",
+      "image": "saint_martin.jpg",
+      "tourists_spot_name": ["Corals of Saint Martin", "Chhera Dwip", "Saint Martin's Beach"],
+      "average_cost": "$400 - $800",
+      "totalVisitorsPerYear": 300000,
+      "travel_time": "1-2 days",
+      "seasonality": "November to April"
+    }
+  ]

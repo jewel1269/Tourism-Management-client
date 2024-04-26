@@ -6,6 +6,9 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import { FiArrowRight } from "react-icons/fi";
+import image1 from "../../assets/Image1-removebg-preview.png"
+import city from "../../assets/city-removebg-preview.png"
+import w from "../../assets/w-removebg-preview.png"
 import {
   useMotionTemplate,
   useMotionValue,
@@ -54,10 +57,10 @@ const Banner = () => {
     return (
         <>
         <Swiper
-          spaceBetween={30}
+          
           centeredSlides={true}
           autoplay={{
-            delay: 4500,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -68,50 +71,57 @@ const Banner = () => {
           onAutoplayTimeLeft={onAutoplayTimeLeft}
           className="mySwiper"
         >
-          <SwiperSlide data-aos="zoom-in"><img src={banner} alt="" /></SwiperSlide>
-          <SwiperSlide data-aos="zoom-in"><motion.section
-      style={{
-        backgroundImage,
-      }}
-      className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
-    >
-      <div className="relative z-10 flex flex-col items-center">
-        <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
-          Beta Now Live!
-        </span>
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-          Decrease your SaaS churn by over 90%
-        </h1>
-        <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
-          distinctio eum impedit nihil ipsum modi.
-        </p>
-        <motion.button
-          style={{
-            border,
-            boxShadow,
-          }}
-          whileHover={{
-            scale: 1.015,
-          }}
-          whileTap={{
-            scale: 0.985,
-          }}
-          className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
-        >
-          Start free trial
-          <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-        </motion.button>
-      </div>
+          <SwiperSlide id='jewel' data-aos="zoom-in">
+            <div className="flex items-center justify-between">
+              <div className='mr-32'>
+              <h1 className='text-5xl text-red-400'>Destination Dynamics</h1>
+              <br />
+              <p>explores sustainable tourism strategies, emphasizing community engagement <br /> and environmental stewardship. It navigates industry trends, <br /> fostering responsible growth</p>
+              <br />
+              <button className="btn btn-success btn-outline lg:w-72">Explore</button>
+              </div>
+              <div  className='h-96 w-[700px]'>
+                <img src={image1} alt="" />
+               </div>
+            
 
-      <div className="absolute inset-0 z-0">
-        <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={2} />
-        </Canvas>
-      </div>
-    </motion.section>
-    </SwiperSlide>
-          <SwiperSlide data-aos="zoom-in">Slide 3</SwiperSlide>
+            </div>
+            </SwiperSlide>
+          <SwiperSlide id='jewel' data-aos="zoom-in">
+          <div className="flex items-center justify-between">
+              <div className='mr-32'>
+              <h1 className='text-5xl text-red-400'>Responsible Tourism</h1>
+              <br />
+              <p>Empowering Communities, Protecting Heritage"
+Discover how responsible tourism management <br /> strategies  empower local communities and safeguard cultural heritage, promoting equitable <br /> economic growth and preserving cultural diversity.</p>
+              <br />
+              <button className="btn btn-success btn-outline lg:w-72">Explore</button>
+              </div>
+              <div  className='h-96 w-[700px]'>
+                <img src={city} alt="" />
+               </div>
+            
+
+            </div>
+           
+         </SwiperSlide>
+          <SwiperSlide id='jewel' data-aos="zoom-in">
+          <div className="flex items-center justify-between">
+              <div className='mr-32'>
+              <h1 className='text-5xl text-red-400'>Innovative Tourism Management</h1>
+              <br />
+              <p>Delve into innovative tourism management approaches that navigate <br /> industry trends, integrating technology 
+                and sustainable practices to ensure <br /> long-term growth while minimizing environmental impact.</p>
+              <br />
+              <button className="btn btn-success btn-outline lg:w-72">Explore</button>
+              </div>
+              <div  className='h-96 w-[700px]'>
+                <img src={w} alt="" />
+               </div>
+            
+
+            </div>
+          </SwiperSlide>
           
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>

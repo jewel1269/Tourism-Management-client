@@ -7,7 +7,7 @@ const AllTouristsSpot = () => {
     const [allData, setAllData] = useState([]);
 
     useEffect(() => {
-        fetch("/AllTouristSport.json")
+        fetch("http://localhost:5000/products")
             .then(res => res.json())
             .then(data => setAllData(data))
             .catch(error => console.error("Error fetching data:", error));
