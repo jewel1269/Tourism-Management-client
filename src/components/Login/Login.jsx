@@ -2,7 +2,7 @@ import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import { Result } from "postcss";
+
 
 
 const googleProvider = new GoogleAuthProvider()
@@ -21,7 +21,7 @@ const Login = () => {
     const logInWithGithub =(e)=>{
         e.preventDefault()
        
-        googleLogin(githubProvider)
+        githubLogin(githubProvider)
         .then(result => console.log(result))
         .then(error =>{console.log(error)})
     

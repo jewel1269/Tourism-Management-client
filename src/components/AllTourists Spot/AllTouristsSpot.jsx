@@ -19,7 +19,7 @@ const AllTouristsSpot = () => {
                 <div id="topFeatureSection"  className="flex items-center gap-2 mt-24 mb-5">
                     <IoMdAppstore className="h-10 w-10 "/>
                     <h2 className="text-3xl bg-gradient-to-r mt-3 font-semibold from-red-400 to-purple-400 bg-clip-text text-transparent">Our Productions</h2>
-                    <FaArrowDown className="h-20 w-7 mt-3"/>
+                    <FaArrowDown className="h-20 animate-bounce w-7 mt-3"/>
                 </div>
                 <h1 className="text-4xl font-bold mb-8 ">Tourists Spots Section:</h1>
             </div>

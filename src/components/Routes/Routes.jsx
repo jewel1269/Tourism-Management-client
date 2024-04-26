@@ -5,6 +5,8 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Countries from "../Countries/Countries";
 import ViewDetails from "../Details/ViewDetails";
+import AddTouristsSpot from "../AddTourists Spot/AddTouristsSpot";
+
 
 
 
@@ -30,9 +32,15 @@ const router = createBrowserRouter([
           element: <Register></Register>
         },
         {
-            path: "/details",
+            path: "/details/:id",
             element: <ViewDetails/>
-        }
+        },
+        {
+          path: "/addTourist",
+          element: <AddTouristsSpot/>
+
+        },
+        
       ]
     },
   ]);

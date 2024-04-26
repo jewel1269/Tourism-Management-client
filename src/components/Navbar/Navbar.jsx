@@ -34,7 +34,7 @@ const Navbar = () => {
           <ul className="menu text-green-900 font-bold menu-horizontal text-lg px-1">
            <NavLink to={"/"}> <li><a>Home</a></li></NavLink>
            <NavLink onClick={scrollToTopFeature}><li><a>AllTourists Spot</a></li></NavLink>
-            <li><a>AddTourists Spot</a></li>
+            <NavLink to={"/addTourist"}><li><a>AddTourists Spot</a></li></NavLink>
             <li><a>MyList</a></li>
           </ul>
         </div>
