@@ -47,7 +47,7 @@ const Card = ({ data }) => {
             </div>
           </div>
         </div>
-        <NavLink to={`/details/:${_id}`}><button className="btn btn-active  lg:w-[60%] ml-20 btn-sm">View Details</button></NavLink>
+        <NavLink to={`/details/${_id}`}><button className="btn btn-active hover:bg-green-500  lg:w-[60%] ml-20 btn-sm">View Details</button></NavLink>
       </div>
     </div>
   );

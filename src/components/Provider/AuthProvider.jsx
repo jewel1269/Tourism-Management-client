@@ -6,33 +6,39 @@ export const AuthContext = createContext(null)
 const auth = getAuth(app)
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState()
+    const [loading , setLoading] = useState(true)
 
 
 
 const createUser = (email, password)=>{
+    setLoading(true)
     return createUserWithEmailAndPassword( auth, email, password)
 }
 
 const signIn =(email, password)=>{
+    setLoading(true)
     return signInWithEmailAndPassword(auth, email, password)
 }
 
 const logOut = () => {
-   
+   setLoading(true)
     return signOut(auth)
 }
 
 const googleLogin=(googleProvider)=>{
+    setLoading(true)
     return signInWithPopup(auth, googleProvider )
 }
 const githubLogin=(githubProvider)=>{
+    setLoading(true)
     return signInWithPopup(auth, githubProvider )
 }
 
 useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, currentUser => {
-        console.log("user in the", currentUser)
+        console.log("user in the", currentUser);
         setUser(currentUser)
+        setLoading(false)
         
     })
     return () => {
@@ -47,6 +53,7 @@ useEffect(() => {
         signIn,
         logOut,
         user,
+        loading,
 
 
 

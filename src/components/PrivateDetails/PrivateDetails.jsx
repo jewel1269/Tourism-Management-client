@@ -1,10 +1,9 @@
-import { useContext } from "react";
-import { AuthContext } from "../Provider/AuthProvider";
-import { Navigate,  useLocation } from "react-router-dom";
-import MyList from "../MyList/MyList";
+import { useContext } from "react"
+import { Navigate, useLocation } from "react-router-dom"
+import ViewDetails from "../Details/ViewDetails"
+import { AuthContext } from "../Provider/AuthProvider"
 
-
-const PrivateMyList = ({children}) => {
+const PrivateDetails = () => {
     const {user, loading} =useContext(AuthContext)
     const location = useLocation()
 
@@ -13,9 +12,9 @@ const PrivateMyList = ({children}) => {
     }
 
     if(user){
-        return <MyList/>
+        return <ViewDetails/>
     }
     return (<Navigate state={location.pathname} to={"/login"}></Navigate>);
 }
 
-export default PrivateMyList;
+export default PrivateDetails;

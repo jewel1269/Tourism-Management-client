@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 const Register = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -87,6 +87,7 @@ const Register = () => {
                   required
                 />
               </div>
+              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>

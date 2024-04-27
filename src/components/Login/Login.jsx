@@ -2,7 +2,7 @@ import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import { useContext, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
@@ -23,6 +23,7 @@ const Login = () => {
         console.log(result)
         toast.success("Successfully Login")
         navigate(location.state)
+        form.reset()
       })
       .then((error) => {
         console.log(error.massage);
@@ -101,6 +102,7 @@ const Login = () => {
               </a>
             </div>
           </div>
+          
           <button className="btn btn-accent w-full  p-3 text-center rounded-sm  dark:text-gray-50  dark:bg-violet-600">
             Login
           </button>

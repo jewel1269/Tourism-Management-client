@@ -10,6 +10,8 @@ import Bangladesh from "../../Country/Banglasedh/Bangladesh";
 import MyList from "../MyList/MyList";
 import PrivateRoute from "../Private1/PrivateRoute";
 import PrivateMyList from "../Private2/PrivateMyList";
+import PrivateDetails from "../PrivateDetails/PrivateDetails";
+import Update from "../Update/Update";
 
 
 
@@ -37,7 +39,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/details/:id",
-            element: <ViewDetails/>
+            element: <PrivateDetails><ViewDetails/></PrivateDetails>
         },
         {
           path: "/addTourist",
@@ -52,6 +54,12 @@ const router = createBrowserRouter([
           path:"/myList",
           element: <PrivateMyList><MyList/></PrivateMyList>
         },
+        {
+          path: "/update/:id",
+          element: <Update/>,
+        },
+        
+
         
       ]
     },
