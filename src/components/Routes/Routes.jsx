@@ -12,6 +12,8 @@ import PrivateRoute from "../Private1/PrivateRoute";
 import PrivateMyList from "../Private2/PrivateMyList";
 import PrivateDetails from "../PrivateDetails/PrivateDetails";
 import Update from "../Update/Update";
+import CountryInfo from "../Countries/CountryInfo";
+import ErrorPage from "../Error/ErrorPage";
 
 
 
@@ -20,6 +22,7 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement:<ErrorPage/>,
       children: [
         {
           path: "/",
@@ -56,11 +59,12 @@ const router = createBrowserRouter([
         },
         {
           path: "/update/:id",
-          element: <Update/>,
+          element: <Update/>
         },
-        
-
-        
+        {
+          path: "/countryInfo/:name",
+          element: <CountryInfo/>
+        },
       ]
     },
   ]);

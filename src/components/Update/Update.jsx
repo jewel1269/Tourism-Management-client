@@ -10,7 +10,10 @@ const Update = () => {
     const {user} = useContext(AuthContext)
     const item = useParams()
     console.log(item)
+    
 
+
+ 
     const handleUpdate = e => {
         e.preventDefault()
   const form = e.target;
@@ -54,6 +57,7 @@ const Update = () => {
         )
     }
 
+   
 
     
 

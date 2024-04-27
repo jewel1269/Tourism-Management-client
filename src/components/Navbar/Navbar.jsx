@@ -4,6 +4,9 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import "./Navbar.css";
 import { Tooltip } from "react-tooltip";
+
+
+
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
 
