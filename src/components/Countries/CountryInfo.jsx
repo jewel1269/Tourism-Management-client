@@ -47,9 +47,7 @@ const CountryInfo = () => {
          items && items.map(item=><Card key={item.id} item={item}/>) 
         }
       </div>
-{/* <div>
-  <MyList/>
-</div> */}
+
 
      </div>
   );
