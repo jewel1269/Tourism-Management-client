@@ -30,10 +30,6 @@ const CountryInfo = () => {
       .catch((error) => console.error("Error fetching country data:", error));
   }, [name]); 
 
-
-  
-  
-
   return (
    
      <div style={{ backgroundColor: "rgb(229, 234, 240)" }}>
