@@ -8,14 +8,14 @@ const Card = ({ data }) => {
   totalVisitorsPerYear} = data;
 
   return (
-    <div data-aos="zoom-in" className="rounded-md  sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
+    <div data-aos="zoom-in" className="rounded-md   sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-100">
       
       <img
         src={image}
         alt=""
         className="object-cover  object-center rounded-lg shadow-md shadow-slate-500   h-56 w-full"
       />
-      <div className="p-2">
+      <div className="p-2 dark:text-gray-100">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-1">
             <button

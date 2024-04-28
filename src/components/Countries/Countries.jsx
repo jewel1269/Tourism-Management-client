@@ -13,10 +13,10 @@ const Countries = () => {
   console.log(countries);
 
   return (
-    <div >
+    <div className="dark:text-white" >
       <div className="mt-7 mb-3 lg:ml-40 ml-10">
         <img className="h-20 w-60 lg:w-80  shadow-lg shadow-black rounded-lg" src={logo} alt="" />
-        <h1 className="text-start text-4xl font-semibold mb-4 lg:mt-5 md:mt-4 mt-5">Tourist Country</h1>
+        <h1 className="text-start dark:text-white text-4xl font-semibold mb-4 lg:mt-5 md:mt-4 mt-5">Tourist Country</h1>
       </div>
 
       <div className="lg:grid md:grid  md:grid-cols-2 lg:ml-40 gap-5 lg:grid-cols-4 ">

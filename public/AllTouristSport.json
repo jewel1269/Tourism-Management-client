@@ -1,85 +1,86 @@
-[
+// [
     
-    {
-      "id": 3,
-      "image": "https://i.ibb.co/dGbgqRv/bnk1.jpg",
-      "tourists_spot_name": "Bangkok",
-      "country_Name": "Thailand",
-      "location": "Bangkok",
-      "short_description": "Vibrant capital city known for its street life and cultural landmarks.",
-      "average_cost": "35k",
-      "seasonality": "summer",
-      "travel_time": "3-4 days",
-      "totalVisitorsPerYear": 2000000
-    },
-    {
-        "id": 2,
-        "image": "https://i.ibb.co/bXWfvN1/cz.jpg",
-        "tourists_spot_name": "Cox's Bazar",
-        "country_Name": "Bangladesh",
-        "location": "Cox's Bazar, Chittagong Division",
-        "short_description": "Longest natural sea beach in the world.",
-        "average_cost": "15k",
-        "seasonality": "Winter",
-        "travel_time": "2-3 days",
-        "totalVisitorsPerYear": 500000
-      },
+//     {
+//       "id": 3,
+//       "image": "https://i.ibb.co/dGbgqRv/bnk1.jpg",
+//       "tourists_spot_name": "Bangkok",
+//       "country_Name": "Thailand",
+//       "location": "Bangkok",
+//       "short_description": "Vibrant capital city known for its street life and cultural landmarks.",
+//       "average_cost": "35k",
+//       "seasonality": "summer",
+//       "travel_time": "3-4 days",
+//       "totalVisitorsPerYear": 2000000
+//     },
+   
     
     
-    {
-      "id": 5,
-      "image": "https://i.ibb.co/54sL258/Bali.jpg",
-      "tourists_spot_name": "Bali",
-      "country_Name": "Indonesia",
-      "location": "Bali",
-      "short_description": "Island known for its beaches, coral reefs, and vibrant culture.",
-      "average_cost": "50k",
-      "seasonality": "Year-round",
-      "travel_time": "5-7 days",
-      "totalVisitorsPerYear": 6000000
-    },
+//     {
+//       "id": 5,
+//       "image": "https://i.ibb.co/54sL258/Bali.jpg",
+//       "tourists_spot_name": "Bali",
+//       "country_Name": "Indonesia",
+//       "location": "Bali",
+//       "short_description": "Island known for its beaches, coral reefs, and vibrant culture.",
+//       "average_cost": "50k",
+//       "seasonality": "Year-round",
+//       "travel_time": "5-7 days",
+//       "totalVisitorsPerYear": 6000000
+//     },
     
     
    
     
-    {
-      "id": 8,
-      "image": "https://i.ibb.co/frDrnc3/Langkawi.jpg",
-      "tourists_spot_name": "Langkawi",
-      "country_Name": "Malaysia",
-      "location": "Langkawi",
-      "short_description": "Archipelago known for its beaches, mangroves, and duty-free shopping.",
-      "average_cost": "45k",
-      "seasonality": "winter",
-      "travel_time": "3-4 days",
-      "totalVisitorsPerYear": 3000000
-    },
-    {
-      "id": 12,
-      "image": "https://i.ibb.co/HdP06sN/Siem-Reap.webp",
-      "tourists_spot_name": "Siem Reap",
-      "country_Name": "Cambodia",
-      "location": "Siem Reap",
-      "short_description": "Gateway to the Angkor Wat complex, vibrant town with markets and nightlife.",
-      "average_cost": "50k",
-      "seasonality": "Year-round",
-      "travel_time": "2-3 days",
-      "totalVisitorsPerYear": 3000000
-    },
+//     {
+//       "id": 8,
+//       "image": "https://i.ibb.co/frDrnc3/Langkawi.jpg",
+//       "tourists_spot_name": "Langkawi",
+//       "country_Name": "Malaysia",
+//       "location": "Langkawi",
+//       "short_description": "Archipelago known for its beaches, mangroves, and duty-free shopping.",
+//       "average_cost": "45k",
+//       "seasonality": "winter",
+//       "travel_time": "3-4 days",
+//       "totalVisitorsPerYear": 3000000
+//     },
+//     {
+//       "id": 12,
+//       "image": "https://i.ibb.co/HdP06sN/Siem-Reap.webp",
+//       "tourists_spot_name": "Siem Reap",
+//       "country_Name": "Cambodia",
+//       "location": "Siem Reap",
+//       "short_description": "Gateway to the Angkor Wat complex, vibrant town with markets and nightlife.",
+//       "average_cost": "50k",
+//       "seasonality": "Year-round",
+//       "travel_time": "2-3 days",
+//       "totalVisitorsPerYear": 3000000
+//     },
+//     {
+//       "id": 2,
+//       "image": "https://i.ibb.co/bXWfvN1/cz.jpg",
+//       "tourists_spot_name": "Cox's Bazar",
+//       "country_Name": "Bangladesh",
+//       "location": "Cox's Bazar, Chittagong Division",
+//       "short_description": "Longest natural sea beach in the world.",
+//       "average_cost": "15k",
+//       "seasonality": "Winter",
+//       "travel_time": "2-3 days",
+//       "totalVisitorsPerYear": 500000
+//     },
   
-    {
-      "id": 10,
-      "image": "https://i.ibb.co/gmSqccp/Ho-Chi-Minh-City.jpg",
-      "tourists_spot_name": "Ho Chi Minh City",
-      "country_Name": "Vietnam",
-      "location": "Ho Chi Minh City",
-      "short_description": "Formerly Saigon, vibrant city known for its French colonial landmarks and street food scene.",
-      "average_cost": "60k",
-      "seasonality": "summer",
-      "travel_time": "3-4 days",
-      "totalVisitorsPerYear": 4000000
-    }
+//     {
+//       "id": 10,
+//       "image": "https://i.ibb.co/gmSqccp/Ho-Chi-Minh-City.jpg",
+//       "tourists_spot_name": "Ho Chi Minh City",
+//       "country_Name": "Vietnam",
+//       "location": "Ho Chi Minh City",
+//       "short_description": "Formerly Saigon, vibrant city known for its French colonial landmarks and street food scene.",
+//       "average_cost": "60k",
+//       "seasonality": "summer",
+//       "travel_time": "3-4 days",
+//       "totalVisitorsPerYear": 4000000
+//     }
     
     
-  ]
+//   ]
   

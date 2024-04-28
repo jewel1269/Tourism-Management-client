@@ -77,7 +77,17 @@ const Footer = () => {
               </li>
               <li>
                 <a rel="noopener noreferrer" href="#">
-                  Guides
+                  <strong className="underline text-red-500">Contact Us:</strong>
+                </a>
+              </li>
+              <li>
+                <a rel="noopener noreferrer" href="#">
+                  <strong>Phn:</strong> +88017XXXXXXXXX
+                </a>
+              </li>
+              <li>
+                <a rel="noopener noreferrer" href="#">
+                  <strong>Email:</strong> wanderQuestA9@gmail.com
                 </a>
               </li>
             </ul>

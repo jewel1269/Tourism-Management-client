@@ -14,6 +14,7 @@ import PrivateDetails from "../PrivateDetails/PrivateDetails";
 import Update from "../Update/Update";
 import CountryInfo from "../Countries/CountryInfo";
 import ErrorPage from "../Error/ErrorPage";
+import Detail from "../Details/Detail";
 
 
 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
           path: "/countryInfo/:name",
           element: <CountryInfo/>
           
+        },
+        {
+          path: "/detail/:id",
+          element: <Detail/>
         },
       ]
     },

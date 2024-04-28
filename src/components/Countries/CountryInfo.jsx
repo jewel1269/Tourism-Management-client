@@ -90,18 +90,13 @@ const CountryInfo = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex">
-                    <NavLink to={`/update/${items._id}`}>
+                  
+                    <NavLink to={`/detail/${items._id}`}>
                       <button className="btn btn-success font-bold  lg:w-[60%] ml-20 btn-sm">
-                        Update
+                        View Details
                       </button>
                     </NavLink>
-                    <NavLink>
-                      <button className="btn btn-error   font-bold lg:w-[60%] ml-20 btn-sm">
-                        Delete
-                      </button>
-                    </NavLink>
-                  </div>
+                 
                 </div>
               </div>
             </div>
