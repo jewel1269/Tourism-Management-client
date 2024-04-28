@@ -14,7 +14,7 @@ const AllTouristsSpot = () => {
     }, []);
 
     return (
-        <div className="lg:ml-40 lg:mr-24">
+        <div  className="lg:ml-40 lg:mr-24">
             <div>
                 <div id="topFeatureSection"  className="flex items-center gap-2 mt-24 mb-5">
                     <IoMdAppstore className="h-10 w-10 "/>
@@ -23,10 +23,10 @@ const AllTouristsSpot = () => {
                 </div>
                 <h1 className="text-4xl font-bold mb-8 ">Tourists Spots Section:</h1>
             </div>
-            <div className="lg:grid lg:grid-cols-4 gap-7">
+            <div className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-4 gap-7">
                 {allData.map(data => <Card key={data.id} data={data} />)}
             </div>
-            <button className="btn btn-accent lg:ml-[45%]  font-bold mt-10 mb-10">See ALL</button>
+            <button className="btn btn-accent lg:ml-[45%] md:ml[50%] ml-[50%]  font-bold mt-10 mb-10">See ALL</button>
         </div>
     );
 };

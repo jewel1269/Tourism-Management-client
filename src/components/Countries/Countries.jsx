@@ -15,7 +15,7 @@ const Countries = () => {
   return (
     <div >
       <div className="mt-7 mb-3 lg:ml-40 ml-10">
-        <img className="h-20 w-60  shadow-lg shadow-black rounded-lg" src={logo} alt="" />
+        <img className="h-20 w-60 lg:w-80  shadow-lg shadow-black rounded-lg" src={logo} alt="" />
         <h1 className="text-start text-4xl font-semibold mb-4 lg:mt-5 md:mt-4 mt-5">Tourist Country</h1>
       </div>
 

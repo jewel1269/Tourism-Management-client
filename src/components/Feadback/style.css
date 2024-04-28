@@ -2,3 +2,18 @@
     border-left: 2px solid black;
     height: 500px;
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    
+    .vl {
+      border-left: 2px solid black;
+      height: 10px;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    
+    .vl {
+      border-left: 2px solid black;
+      height: 10px;
+    }
+  }

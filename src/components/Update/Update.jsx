@@ -9,11 +9,10 @@ import { useLoaderData, useParams } from "react-router-dom";
 const Update = () => {
     const {user} = useContext(AuthContext)
     const item = useParams()
+    const countries = useLoaderData()
+    console.log(countries)
     console.log(item)
     
-
-
- 
     const handleUpdate = e => {
         e.preventDefault()
   const form = e.target;
@@ -57,7 +56,9 @@ const Update = () => {
         )
     }
 
-   
+   const info = countries.find(info=>info._id === item.id)
+   console.log(info)
+
 
     
 
@@ -79,19 +80,19 @@ const Update = () => {
             <label className="block   text-white  font-bold mb-2" htmlFor="product_name">
             tourists_spot_name:
             </label>
-            <input defaultValue={item.spot_name}  className="appearance-none  border border-slate-400  bore rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="product_name" type="text" name="spot_name" />
+            <input defaultValue={info?.spot_name}  className="appearance-none text-black  border border-slate-400  bore rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="product_name" type="text" name="spot_name" />
           </div>
           <div className="mb-4">
             <label className="block text-white  font-bold mb-2" htmlFor="type">
             Image URL
             </label>
-            <input defaultValue={item.photoURL}  className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="photoURL" />
+            <input defaultValue={info?.photoURL}  className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="photoURL" />
           </div>
           <div className="mb-4">
             <label className="block text-white  font-bold mb-2" htmlFor="image_url">
             location:
             </label>
-            <input defaultValue={item.location} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="location" />
+            <input defaultValue={info?.location} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="location" />
           </div>
           <div className="relative mb-4">
           <label className="block text-white  font-bold mb-2" htmlFor="country_name">
@@ -103,7 +104,7 @@ const Update = () => {
               id="country_name"
               name="country_name"
               type="text"
-              defaultValue={item.country_name}
+              defaultValue={info?.country_name}
              
             >
               <option value="">Select Country</option>
@@ -123,7 +124,7 @@ const Update = () => {
             <label className="block text-white  font-bold mb-2" htmlFor="price">
             average_cost:
             </label>
-            <input defaultValue={item.price} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="price" name="price"  />
+            <input defaultValue={info?.price} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="price" name="price"  />
           </div>
          
     
@@ -131,13 +132,13 @@ const Update = () => {
             <label className="block text-white  font-bold mb-2" htmlFor="type">
             seasonality: 
             </label>
-            <input defaultValue={item.season} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="season" />
+            <input defaultValue={info?.season} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="season" />
           </div>
           <div className="mb-4">
             <label className="block text-white  font-bold mb-2" htmlFor="rating">
             travel_time:
             </label>
-            <input defaultValue={item.travelTime} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="travelTime" />
+            <input defaultValue={info?.travelTime} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="travelTime" />
           </div>
           <div className="mb-4">
             <label className="block text-white  font-bold mb-2" htmlFor="type">
@@ -149,19 +150,19 @@ const Update = () => {
             <label className="block text-white  font-bold mb-2" htmlFor="rating">
             User Name:
             </label>
-            <input defaultValue={item.name} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="name" />
+            <input defaultValue={info?.name} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="name" />
           </div>
           <div className="mb-4 ">
             <label className="block text-white  font-bold mb-2" htmlFor="rating">
             User Email:
             </label>
-            <input defaultValue={item.userEmail} className="appearance-none border border-slate-400  text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="userEmail" />
+            <input defaultValue={info?.userEmail} className="appearance-none border border-slate-400  text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="userEmail" />
           </div>
           <div className="mb-4 col-span-2">
             <label className="block text-white  font-bold mb-2" htmlFor="description">
             short_description:
             </label>
-            <textarea placeholder="write something......" className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="description" type="text" name="description" rows="4"></textarea>
+            <textarea placeholder="write something......" className="appearance-none border border-slate-400   text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="description" type="text" name="description" rows="4"></textarea>
           </div>
           <br />
           <div className="lg:flex lg:items-center lg:ml-0 ml-32 md:ml-96 ">

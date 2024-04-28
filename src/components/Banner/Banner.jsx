@@ -57,7 +57,7 @@ const Banner = () => {
     return (
         <>
         <Swiper
-          
+         
           centeredSlides={true}
           autoplay={{
             delay: 2500,
@@ -71,33 +71,33 @@ const Banner = () => {
           onAutoplayTimeLeft={onAutoplayTimeLeft}
           className="mySwiper"
         >
-          <SwiperSlide id='jewel' data-aos="zoom-in">
-            <div className="flex items-center justify-between">
-              <div className='mr-32'>
-              <h1 className='text-5xl text-red-400'>Destination Dynamics</h1>
+          <SwiperSlide id='jewel' >
+            <div className="lg:flex lg:items-center lg:justify-between">
+              <div className='lg:mr-32'>
+              <h1 className='lg:text-5xl text-2xl text-red-400'>Destination Dynamics</h1>
               <br />
-              <p>explores sustainable tourism strategies, emphasizing community engagement <br /> and environmental stewardship. It navigates industry trends, <br /> fostering responsible growth</p>
+              <p className='lg:text-xl text-sm'>explores sustainable tourism strategies, emphasizing community <br /> engagement  and environmental stewardship. It navigates industry <br />trends, fostering responsible growth</p>
               <br />
               <button className="btn btn-success btn-outline lg:w-72">Explore</button>
               </div>
-              <div  className='h-96 w-[700px]'>
+              <div  className='lg:h-96 lg:mt-0 mt-5  h-44 w-96 lg:w-[700px]'>
                 <img src={image1} alt="" />
                </div>
             
 
             </div>
             </SwiperSlide>
-          <SwiperSlide id='jewel' data-aos="zoom-in">
-          <div className="flex items-center justify-between">
-              <div className='mr-32'>
-              <h1 className='text-5xl text-red-400'>Responsible Tourism</h1>
+          <SwiperSlide id='jewel' >
+          <div className="lg:flex lg:items-center lg:justify-between">
+              <div className='lg:mr-32'>
+              <h1 className='lg:text-5xl text-2xl text-red-400'>Responsible Tourism</h1>
               <br />
-              <p>Empowering Communities, Protecting Heritage"
+              <p className='lg:text-xl text-sm'>Empowering Communities, Protecting Heritage"
 Discover how responsible tourism management <br /> strategies  empower local communities and safeguard cultural heritage, promoting equitable <br /> economic growth and preserving cultural diversity.</p>
               <br />
               <button className="btn btn-success btn-outline lg:w-72">Explore</button>
               </div>
-              <div  className='h-96 w-[700px]'>
+              <div  className='lg:h-96 lg:mt-0 mt-5 h-44 w-96 lg:w-[700px]'>
                 <img src={city} alt="" />
                </div>
             
@@ -105,17 +105,17 @@ Discover how responsible tourism management <br /> strategies  empower local com
             </div>
            
          </SwiperSlide>
-          <SwiperSlide id='jewel' data-aos="zoom-in">
-          <div className="flex items-center justify-between">
-              <div className='mr-32'>
-              <h1 className='text-5xl text-red-400'>Innovative Tourism Management</h1>
+          <SwiperSlide id='jewel' >
+          <div className="lg:flex lg:items-center lg:justify-between">
+              <div className='lg:mr-32'>
+              <h1 className='lg:text-5xl text-2xl text-red-400'>Innovative Tourism Management</h1>
               <br />
-              <p>Delve into innovative tourism management approaches that navigate <br /> industry trends, integrating technology 
+              <p className='lg:text-xl text-sm'>Delve into innovative tourism management approaches that navigate <br /> industry trends, integrating technology 
                 and sustainable practices to ensure <br /> long-term growth while minimizing environmental impact.</p>
               <br />
               <button className="btn btn-success btn-outline lg:w-72">Explore</button>
               </div>
-              <div  className='h-96 w-[700px]'>
+              <div  className='lg:h-96 lg:mt-0 mt-5  h-44 w-96 lg:w-[700px]'>
                 <img src={w} alt="" />
                </div>
             

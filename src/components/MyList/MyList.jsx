@@ -59,16 +59,16 @@ const MyList = () => {
   return (
 <div  style={{ backgroundColor: "rgb(229, 234, 240)" }}>
 <div >
-<h1 className="lg:ml-40 p-10 text-4xl font-bold">Your added List: </h1>
+<h1 className="lg:ml-40  p-10 text-4xl font-bold">Your added List: </h1>
 <NavLink to={"/"}><button className="btn text-xl mt-4 btn-ghost btn-sm lg:ml-44 lg:mb-10">🔙 Continue Visiting</button></NavLink>
         
         
 </div>
 
-    <div className="lg:grid lg:grid-cols-3 gap-6 lg:ml-60 lg:mr-60 p-5">
+    <div className="lg:grid  lg:grid-cols-3 gap-6 lg:ml-60 lg:mr-60 p-5">
       {items.map((item) => (
         <div key={item.id}>
-          <div className="rounded-md  sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
+          <div data-aos="zoom-in" className="rounded-md lg:mt-0 mt-6 sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
       
       <img
         src={item.photoURL}
@@ -96,6 +96,8 @@ const MyList = () => {
             
           </div>
           <div>
+            
+            <h3><strong>User Name:</strong> {item.name}</h3>
             <div>
               <h2><strong>Season:</strong> {item.season}</h2>
               <h2><strong>Time:</strong> {item.travelTime}</h2>

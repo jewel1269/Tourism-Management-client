@@ -8,7 +8,7 @@ const Card = ({ data }) => {
   totalVisitorsPerYear} = data;
 
   return (
-    <div className="rounded-md  sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
+    <div data-aos="zoom-in" className="rounded-md  sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
       
       <img
         src={image}

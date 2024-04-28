@@ -59,11 +59,13 @@ const router = createBrowserRouter([
         },
         {
           path: "/update/:id",
-          element: <Update/>
+          element: <Update/>,
+          loader: ()=>fetch("http://localhost:5000/countries")
         },
         {
           path: "/countryInfo/:name",
           element: <CountryInfo/>
+          
         },
       ]
     },

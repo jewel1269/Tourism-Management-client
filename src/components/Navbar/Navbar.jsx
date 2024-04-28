@@ -41,22 +41,31 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <ul
+          <ul id="sidebar"
             tabIndex={0}
-            className="menu menu-sm text-green-900 font-bold dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm text-green-900 font-bold dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52"
           >
+              <NavLink to={"/"}>
+            {" "}
             <li>
               <a>Home</a>
             </li>
+          </NavLink>
+          <Link onClick={scrollToTopFeature}>
             <li>
               <a>AllTourists Spot</a>
             </li>
+          </Link>
+          <NavLink to={"/addTourist"}>
             <li>
               <a>AddTourists Spot</a>
             </li>
+          </NavLink>
+          <NavLink to={"/myList"}>
             <li>
               <a>MyList</a>
             </li>
+          </NavLink>
           </ul>
         </div>
 

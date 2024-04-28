@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Country = ({ country }) => {
+  AOS.init();
   
-  const {image, name, id,} = country
+  const {image, name, id,short_description} = country
   return (
-    <div className="card lg:w-96 h-96 border-black shadow-sm shadow-slate-400 w-full lg:mt-0 mt-4 bg-base-100 ">
+    <div data-aos="zoom-in"  className="card lg:w-96 h-96 bg-slate-50 border-black shadow-sm shadow-slate-400 w-full lg:mt-0 mt-4  ">
       <figure className="px-10 pt-10">
         <img
         
@@ -14,7 +17,7 @@ const Country = ({ country }) => {
         />
       </figure>
       <div className="card-body items-center text-center">
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <p>{short_description}</p>
         <div className="card-actions ">
           <NavLink to={`countryInfo/${name}`}><button className="btn btn-success btn-outline w-full">{name}</button></NavLink>
         </div>

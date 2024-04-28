@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AuthContext } from "../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 
 const AddTouristsSpot = () => {
@@ -34,6 +35,7 @@ const handleAdd = e=>{
   })
   .then(res=> res.json())
   .then(data => console.log(data))
+  toast.success("Successfully Added")
   form.reset()
 
   

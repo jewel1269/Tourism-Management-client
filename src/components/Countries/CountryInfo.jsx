@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { NavLink, useParams } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
+import MyList from "../MyList/MyList";
 
 const CountryInfo = () => {
   const { name } = useParams();
+
   const [country, setCountry] = useState([]);
-  const [items, setItems] = useState(null); // State to hold the found country
+  const [items, setItems] = useState(null); 
+  
 
   useEffect(() => {
     fetch("http://localhost:5000/countries")
@@ -14,23 +18,29 @@ const CountryInfo = () => {
         setCountry(data);
         const foundCountry = data.find((item) => item.country_name === name);
         setItems(foundCountry);
+        
       })
       .catch((error) => console.error("Error fetching country data:", error));
   }, [name]); 
 
+  
+
   return (
-    <div>
+   
+     <div >
+   
+
+<div>
+<div>
       {items && (
         <div style={{ backgroundColor: "rgb(229, 234, 240)" }}>
           <div>
-            <h1 className="lg:ml-40 p-10 text-4xl font-bold">
+            <h1 className="lg:ml-40 text-center p-10 text-4xl font-bold">
               {items.country_name}
             </h1>
-            <NavLink to={"/"}>
-              <button className="btn text-xl mt-4 btn-ghost btn-sm lg:ml-44 lg:mb-10">
-                🔙 Continue Visiting
-              </button>
-            </NavLink>
+            <h1 className="text-2xl text-center">⚠️Yoy Can Updated only the ones you have added</h1>
+            
+            
           </div>
 
           <div className="lg:grid lg:grid-cols-3 gap-6 lg:ml-60 lg:mr-60 p-5">
@@ -99,6 +109,13 @@ const CountryInfo = () => {
         </div>
       )}
     </div>
+</div>
+
+<div>
+  <MyList/>
+</div>
+
+     </div>
   );
 };
 
