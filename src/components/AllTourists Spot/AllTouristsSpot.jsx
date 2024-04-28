@@ -26,6 +26,7 @@ const AllTouristsSpot = () => {
             setSortedData([...allData].sort((a, b) => b.average_cost - a.average_cost));
         }
     };
+    
 
     return (
         <div className="lg:ml-40 lg:mr-24">
