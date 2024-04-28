@@ -10,7 +10,7 @@ const MyList = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/countries/${user?.email} `)
+    fetch(`https://tourism-management-mauve.vercel.app/countries/${user?.email} `)
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
@@ -31,7 +31,7 @@ const MyList = () => {
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.isConfirmed) {
-          fetch(`http://localhost:5000/countries/${id}`, {
+          fetch(`https://tourism-management-mauve.vercel.app/countries/${id}`, {
             method: "DELETE"
           })
             .then((res) => res.json())

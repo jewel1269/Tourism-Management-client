@@ -61,7 +61,7 @@ const router = createBrowserRouter([
         {
           path: "/update/:id",
           element: <Update/>,
-          loader: ()=>fetch("http://localhost:5000/countries")
+          loader: ()=>fetch("https://tourism-management-mauve.vercel.app/countries")
         },
         {
           path: "/countryInfo/:name",

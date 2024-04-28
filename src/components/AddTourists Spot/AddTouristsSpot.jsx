@@ -25,7 +25,7 @@ const handleAdd = e=>{
   const userAdd = {name,email, userEmail,spot_name, photoURL, location, country_name, price, season, travelTime,visitor,description}
   console.log(userAdd)
 
-  fetch("http://localhost:5000/countries",{
+  fetch("https://tourism-management-mauve.vercel.app/countries",{
     method:"POST",
     headers:{
       "content-type": "application/json"

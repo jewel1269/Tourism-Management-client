@@ -17,7 +17,7 @@ const CountryInfo = () => {
   
 
   useEffect(() => {
-    fetch("http://localhost:5000/countries")
+    fetch("https://tourism-management-mauve.vercel.app/countries")
       .then((res) => res.json())
       .then((data) => {
         console.log(data)

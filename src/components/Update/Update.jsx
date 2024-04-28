@@ -31,7 +31,7 @@ const Update = () => {
   const userAdd = {name,email, userEmail,spot_name, photoURL, location, country_name, price, season, travelTime,visitor,description}
   console.log(userAdd)
     
-        fetch(`http://localhost:5000/countries/${item.id}`, {
+        fetch(`https://tourism-management-mauve.vercel.app/countries/${item.id}`, {
             method:"PUT",
             headers:{
                 "content-type": "application/json"

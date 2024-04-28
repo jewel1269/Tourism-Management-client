@@ -9,7 +9,7 @@ const AllTouristsSpot = () => {
     const [sortOrder, setSortOrder] = useState("ascending");
 
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://tourism-management-mauve.vercel.app/products")
             .then(res => res.json())
             .then(data => {
                 setAllData(data);
