@@ -17,7 +17,6 @@ const handleAdd = e=>{
   const spot_name = form.spot_name.value;
   const location = form.location.value;
   const country_name= form.country_name.value;
-
   const price = form.price.value;
   const season = form.season.value;
   const travelTime = form.travelTime.value;
@@ -74,7 +73,7 @@ const handleAdd = e=>{
               className="appearance-none border border-slate-400bg-stone-50 rounded w-full py-4 px-3 pr-8 leading-tight focus:outline-none focus:shadow-outline"
               id="country_name"
               name="country_name"
-              type="text"
+              type="country_name"
              
             >
               <option value="">Select Country</option>

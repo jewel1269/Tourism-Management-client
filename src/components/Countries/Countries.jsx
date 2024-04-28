@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Country from "./Country";
 import logo from "../../assets/Southeast_Asia-removebg-preview.png";
 
+
 const Countries = () => {
   const [countries, setCountries] = useState();
 

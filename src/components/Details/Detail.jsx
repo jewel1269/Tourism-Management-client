@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 const Detail = () => {
     const [item, setItem] = useState(null);
@@ -45,9 +45,16 @@ const Detail = () => {
                                 <h2><strong>Visitor:</strong> {item.totalVisitorsPerYear}</h2>
                             </div>
                         </div>
+                       <div className="flex gap-2">
+                      <NavLink to={-1}>
+                      <div className="card-actions justify-center">
+                            <button className="btn btn-success btn-outline btn-sm">Back</button>
+                        </div>
+                      </NavLink>
                         <div className="card-actions justify-center">
                             <button className="btn btn-success btn-outline btn-sm">Booking</button>
                         </div>
+                       </div>
                     </div>
                 </div>
             )}

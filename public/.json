@@ -1,0 +1,94 @@
+[
+    {
+      "country_name": "Bangladesh",
+      "image": "https://ibb.co/DC6JdJw",
+      "location": "Khulna Division",
+      "seasonality": "Winter",
+      "travel_time": "5 days",
+      "average_cost": "$300",
+      "total_visitors_per_year": 50000,
+      "short_description": "Mangrove forest and UNESCO World Heritage Site, home to Bengal tigers and diverse wildlife."
+    },
+    {
+      "country_name": "Bangladesh",
+      "image": "https://ibb.co/tmkr4nh",
+      "location": "Chittagong Division",
+      "seasonality": "Summer",
+      "travel_time": "3 days",
+      "average_cost": "$200",
+      "total_visitors_per_year": 200000,
+      "short_description": "World's longest natural sandy sea beach, with picturesque sunsets and seafood delicacies."
+    },
+    {
+      "country_name": "Thailand",
+      "image": "https://ibb.co/zmHk2NL",
+      "location": "Central Thailand",
+      "seasonality": "Winter",
+      "travel_time": "4 days",
+      "average_cost": "$250",
+      "total_visitors_per_year": 1000000,
+      "short_description": "Vibrant capital city renowned for its street food, cultural landmarks, and bustling markets."
+    },
+    {
+      "country_name": "Thailand",
+      "image": "https://ibb.co/84s3N4x",
+      "location": "Northern Thailand",
+      "seasonality": "Autumn",
+      "travel_time": "3 days",
+      "average_cost": "$180",
+      "total_visitors_per_year": 500000,
+      "short_description": "Ancient city known for its stunning temples, lush mountains, and vibrant night markets."
+    },
+    {
+      "country_name": "Indonesia",
+      "image": "https://ibb.co/mRrbvqS",
+      "location": "Indonesian Archipelago",
+      "seasonality": "Summer",
+      "travel_time": "7 days",
+      "average_cost": "$350",
+      "total_visitors_per_year": 2000000,
+      "short_description": "Island paradise with lush landscapes, stunning beaches, and vibrant culture."
+    },
+    {
+      "country_name": "Indonesia",
+      "image": "https://ibb.co/M8vh32x",
+      "location": "Central Java",
+      "seasonality": "Spring",
+      "travel_time": "2 days",
+      "average_cost": "$150",
+      "total_visitors_per_year": 500000,
+      "short_description": "Magnificent Buddhist temple complex, a UNESCO World Heritage Site."
+    },
+    {
+      "country_name": "Malaysia",
+      "image": "https://ibb.co/F4zwpDx",
+      "location": "Peninsular Malaysia",
+      "seasonality": "Winter",
+      "travel_time": "3 days",
+      "average_cost": "$200",
+      "total_visitors_per_year": 800000,
+      "short_description": "Modern metropolis with iconic skyscrapers, diverse cuisine, and cultural heritage."
+    },
+   
+    {
+      "country_name": "Vietnam",
+      "image": "https://ibb.co/C6Rp2DP",
+      "location": "Quang Ninh Province",
+      "seasonality": "Autumn",
+      "travel_time": "3 days",
+      "average_cost": "$300",
+      "total_visitors_per_year": 700000,
+      "short_description": "UNESCO World Heritage Site famous for its emerald waters and thousands of limestone islands."
+    },
+    {
+      "country_name": "Vietnam",
+      "image": "https://ibb.co/sPhcHbZ",
+      "location": "Southern Vietnam",
+      "seasonality": "Winter",
+      "travel_time": "4 days",
+      "average_cost": "$180",
+      "total_visitors_per_year": 1200000,
+      "short_description": "Dynamic city blending colonial landmarks with modern skyscrapers and bustling markets."
+    }
+  ]
+  
