@@ -11,23 +11,20 @@ Currently, two official plugins are available:
                   
 
 
-                             Selected Category: Tourism Management Website (B9A10Type-01 Requirements)
+                           # Tourism Management Website (B9A10Type-01 Requirements)
 
-Live Site URL: [https://tourism-management-website.web.app/](https://tourism-management-website.web.app/) (powered by Jewel mia)
+**Live Site URL:** [https://tourism-management-website.web.app/](https://tourism-management-website.web.app/) (powered by Jewel mia)
 
--Description:
+## Description
 This website is designed to efficiently manage tourist spots and destinations, providing users with essential information about various tourist attractions.
 
- -Features:
+## Features
+- **User Authentication:** Users can securely sign up, log in, and manage their profiles.
+- **Tourist Spot Management:** Allows users to add, update, and delete tourist spots with ease.
+- **Interactive Interface:** Engaging user experience with interactive elements and smooth navigation.
+- **Search Functionality:** Enables users to search for tourist spots based on location, seasonality, and other criteria.
+- **Responsive Design:** Ensures seamless usability across various devices, including desktops, tablets, and mobile phones.
 
- -User Authentication: Users can securely sign up, log in, and manage their profiles.
- -Tourist Spot Management: Allows users to add, update, and delete tourist spots with ease.
- -Interactive Interface: Engaging user experience with interactive elements and smooth navigation.
- -Search Functionality: Enables users to search for tourist spots based on location, seasonality, and other criteria.
- -Responsive Design: Ensures seamless usability across various devices, including desktops, tablets, and mobile phones.
-
-
- -Used Package Name:
-
- -Lottie React
- -React-tooltip
+## Used Package Name
+- **Lottie React**
+- **React-tooltip**
