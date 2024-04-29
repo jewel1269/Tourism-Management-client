@@ -14,7 +14,7 @@ const {country_name,image, location, seasonality,travel_time, average_cost, tota
     <div className="rounded-md  sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
       <img
         src={image}
-        alt=""
+        alt="Coming soon"
         className="object-cover  object-center rounded-lg shadow-md shadow-slate-500   h-56 w-full"
       />
       <div className="p-2">

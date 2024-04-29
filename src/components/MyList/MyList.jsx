@@ -68,7 +68,7 @@ const MyList = () => {
     <div className="lg:grid  lg:grid-cols-3 gap-6 lg:ml-60 lg:mr-60 p-5">
       {items.map((item) => (
         <div key={item.id}>
-          <div data-aos="zoom-in" className="rounded-md lg:mt-0 mt-6 sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
+          <div  className="rounded-md lg:mt-0 mt-6 sm:w-[380px] shadow-sm shadow-slate-400  dark:text-gray-800">
       
       <img
         src={item.photoURL}

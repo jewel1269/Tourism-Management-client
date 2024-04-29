@@ -24,7 +24,7 @@ const ViewDetails = () => {
   const item = cards.find((item) => item._id === id);
 
   if (loading) {
-    return <div className="w-16 h-16 border-4 lg:ml-[50%]  lg:mt-32 lg:mb-32 bg-red-400 border-dashed rounded-full animate-spin dark:border-violet-600"></div>
+    return <div className="w-16 h-16 border-4 lg:ml-[50%] md:ml-[50%] ml-[50%]  lg:mt-32 lg:mb-32 bg-red-400 border-dashed rounded-full animate-spin dark:border-violet-600"></div>
   }
 
   if (!item) {

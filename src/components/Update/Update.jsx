@@ -22,13 +22,13 @@ const Update = () => {
   const userEmail = form.userEmail.value;
   const spot_name = form.spot_name.value;
   const location = form.location.value;
-  const country_name= form.country_name.value;
+  const country_name = form.country_name.value;
   const price = form.price.value;
   const season = form.season.value;
   const travelTime = form.travelTime.value;
   const visitor = form.visitor.value;
   const description = form.description.value;
-  const userAdd = {name,email, userEmail,spot_name, photoURL, location, country_name, price, season, travelTime,visitor,description}
+  const userAdd = {name,email, userEmail,spot_name,country_name, photoURL, location,  price, season, travelTime,visitor,description}
   console.log(userAdd)
     
         fetch(`https://tourism-management-mauve.vercel.app/countries/${item.id}`, {
@@ -46,7 +46,7 @@ const Update = () => {
               if(data.modifiedCount> 0){
                 Swal.fire({
                   title: 'Success!',
-                  text: 'Coffee Updated successfully',
+                  text: 'Updated successfully',
                   icon: 'success',
                   confirmButtonText: 'Cool'
                 })
@@ -58,9 +58,7 @@ const Update = () => {
 
    const info = countries.find(info=>info._id === item.id)
    console.log(info)
-
-
-    
+   console.log(info.country_name)
 
 
     return (
@@ -101,11 +99,10 @@ const Update = () => {
           <div className="relative">
             <select
               className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 pr-8 leading-tight focus:outline-none focus:shadow-outline"
-              id="country_name"
-              name="country_name"
+              id="text"
               type="text"
-              defaultValue={info?.country_name}
-             
+              name="country_name"
+              defaultValue={info?.country_name}           
             >
               <option value="">Select Country</option>
               <option value="Bangladesh">Bangladesh</option>
@@ -144,7 +141,7 @@ const Update = () => {
             <label className="block text-white  font-bold mb-2" htmlFor="type">
             totaL Visitors Per Year:
             </label>
-            <input defaultValue={item.visitor} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="visitor" />
+            <input defaultValue={item?.visitor} className="appearance-none border border-slate-400 text-black rounded w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline" id="text" type="text" name="visitor" />
           </div>
           <div className="mb-4">
             <label className="block text-white  font-bold mb-2" htmlFor="rating">

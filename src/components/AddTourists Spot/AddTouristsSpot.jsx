@@ -73,7 +73,7 @@ const handleAdd = e=>{
               className="appearance-none border border-slate-400bg-stone-50 rounded w-full py-4 px-3 pr-8 leading-tight focus:outline-none focus:shadow-outline"
               id="country_name"
               name="country_name"
-              type="country_name"
+              type="text"
              
             >
               <option value="">Select Country</option>
